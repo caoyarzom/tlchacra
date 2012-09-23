@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Turismo La Chacra - Quincho - Comidas Tipicas - Naturaleza</title>
+        <meta name="description" content="Turismo La Chacra - Local para Eventos al aire libre, 
+              preparación de comidas y entretenciones varias en contacto con la naturaleza.
+              Paseos por praderas y contacto con animales domésticos (Agro-Turismo).
+              Ubicado a 3 Km desde castro, en el Sector la Chacra">
+        <link rel="shortcut icon" href="favicon.ico" >
+        <link rel="icon" type="image/gif" href="animated_favicon1.gif" >
+
+        <script type="text/javascript" src="SlideDeck/jquery-1.3.2.min.js" ></script>
+        <!-- Include the below script, Copyright 2010, Brandon Aaron (http://brandonaaron.net/) for scrollwheel support. -->
+        <script type="text/javascript" src="SlideDeck/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="SlideDeck/slidedeck.skin.css" media="screen" />
+        <!-- Include the SlideDeck jQuery script. -->
+        <script type="text/javascript" src="SlideDeck/slidedeck.jquery.lite.js"></script>
+
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/roundabout.js"></script>
+        <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+        <script type="text/javascript" src="js/gallery_init.js"></script>
+        <script type="text/javascript" src="js/cufon-replace.js"></script>
+        <!-- fancybox -->
+        <script src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"> </script>
+        <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css"/>
+        <!-- end fancybox -->
+        <!--[if lt IE 7]>
+              <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+        <![endif]-->
+        <!--[if lt IE 9]>
+              <script type="text/javascript" src="js/html5.js"></script>
+          <script type="text/javascript" src="js/IE9.js"></script>
+        <![endif]-->
+        <script type='text/javascript' src="js/prefixfree.min.js"></script>
+        <script>
+            //*/Funcionamiento menú*/
+            $(document).ready(function(){
+                //$('header nav ul li a').removeClass("current");
+                $('#servicio').click(function(){
+                    $('header nav ul li a.dos').addClass("current");
+                    $('header nav ul li a.tres').removeClass("current");
+                    $('header nav ul li a.cuatro').removeClass("current");
+                    $('header nav ul li a.cinco').removeClass("current");
+                    $('.main-box').load('servicios.html');
+                    return false;
+                })
+                $('#galeria_menu').click(function(){
+                    $('header nav ul li a.uno').removeClass("current");
+                    $('header nav ul li a.cuatro').removeClass("current");
+                    $('header nav ul li a.cinco').removeClass("current");
+                    $('header nav ul li a.dos').removeClass("current");
+                    $('header nav ul li a.tres').addClass("current");
+                    $('.main-box').load('galeria.html');
+                    return false;
+                })
+                $('#contacto').click(function(){
+                    $('header nav ul li a.uno').removeClass("current");
+                    $('header nav ul li a.tres').removeClass("current");
+                    $('header nav ul li a.cinco').removeClass("current");
+                    $('header nav ul li a.dos').removeClass("current");
+                    $('header nav ul li a.cuatro').addClass("current");
+                    $('.main-box').load('contacto.html');
+                })
+                $('#ubicacion').click(function(){
+                    $('header nav ul li a.uno').removeClass("current");
+                    $('header nav ul li a.cuatro').removeClass("current");
+                    $('header nav ul li a.tres').removeClass("current");
+                    $('header nav ul li a.dos').removeClass("current");
+                    $('header nav ul li a.cinco').addClass("current");
+                    $('.main-box').load('ubicacion.php');
+                })
+            });
+            //Google Analytics
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-26216528-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Turismo La Chacra</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="uno current">Inicio</a></li>
+                        <li id="servicio"><a class="dos">Arriendos</a></li>
+                        <li id="galeria_menu"><a class="tres">Galeria</a></li>
+                        <li id="contacto"><a class="cuatro">Contacto</a></li>
+                        <li id="ubicacion"><a class="cinco">Ubicación</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- #gallery -->
+        <section id="gallery">
+            <div class="container">
+                <ul id="myRoundabout">                    
+                    <li><img src="images/slide1.jpg" alt=""></li>
+                    <li><img src="images/slide2.jpg" alt=""></li>
+                    <li><img src="images/slide5.jpg" alt=""></li>
+                    <li><img src="images/slide4.JPG" alt=""></li>
+                    <li><img src="images/slide6.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- /#gallery -->
+        <div class="main-box">
+            <div class="container">
+                <div class="inside">
+                    <div class="wrapper">
+                        <!-- aside -->
+                        <aside>
+                            <h2>Fecha <span>Eventos</span></h2>
+                            <!-- .news -->
+                            <ul class="news">
+                                <li>
+                                    <figure><strong>06</strong>Oct  </figure>
+                                    <h3><a href="https://www.facebook.com/events/510573728968670/">Curanto Buffet!</a></h3>
+                                    Curanto Tenedor Libre <a href="https://www.facebook.com/events/510573728968670/">...</a>
+                                </li>
+                                <li>
+                                    <figure><strong>01</strong>Sep  </figure>
+                                    <h3><a href="https://www.facebook.com/events/510573728968670/">Gran Yoco!</a></h3>
+                                    Reitimiento de Chancho <a href="https://www.facebook.com/events/510573728968670/">...</a>
+                                </li>
+
+                            </ul>
+                            <!-- /.news -->
+                        </aside>
+                        <!-- content -->
+                        <section id="content">
+                            <article>
+                                <h2>Bienvenidos a <span> Turismo la Chacra :) </span></h2>
+                                <p>El aire puro y la brisa del campo, hacen de 
+                                    este lugar un idílico espacio para compartir con 
+                                    familia y amigos. Turismo "La Chacra" ofrece muchos más 
+                                    que las instalaciones para poder disfrutar de un asado, 
+                                    un curanto, o una rica chochoca al palo; también podrá
+                                    disfrutar de la belleza del campo, la comodidad de su 
+                                    estacionamiento y los juegos para niños.</p>
+
+                                <div id="fb-root"></div>
+                                <script>
+                                    (function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                </script>
+                                <div class="fb-like-box" data-href="https://www.facebook.com/QuinchoLaChacra" data-width="550" data-show-faces="true" data-stream="false" data-header="true"></div>
+                            </article> 
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="fleft">Copyright - &COPY; turimoslachacra.cl 2012</div>
+                    <div class="fright"> &nbsp; &nbsp; |&nbsp; &nbsp; <a href="http://templates.com/product/3d-models/" target="_blank" rel="nofollow">designed by TemplateMonster.com</a> </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript"> Cufon.now(); </script>
+    </body>
+</html>

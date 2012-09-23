@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.google.com/schemas/sitemap/0.84 http://www.google.com/schemas/sitemap/0.84/sitemap.xsd">
+<!-- Created by phpSitemapNG version 1.5.3 -->
+<!-- Last update of sitemap 2012-09-20T18:13:36-03:00 -->
+<url>
+<loc>http://turismolachacra.cl/contacto.html</loc>
+<lastmod>2012-09-20T17:06:37-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://turismolachacra.cl/galeria.php</loc>
+<lastmod>2012-09-20T17:06:38-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://turismolachacra.cl/index.html</loc>
+<lastmod>2012-09-20T17:06:38-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://turismolachacra.cl/servicios.html</loc>
+<lastmod>2012-09-20T17:06:38-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+<url>
+<loc>http://turismolachacra.cl/ubicacion.php</loc>
+<lastmod>2012-09-20T17:06:39-03:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.5</priority>
+</url>
+</urlset>
