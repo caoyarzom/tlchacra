@@ -1,50 +1,151 @@
-﻿    <div class="container">
-      <div class="inside">
-        <div class="wrapper">
-        	<!-- aside -->
-          <aside>
-            <h2>Nuestros <span>Datos</span></h2>
-            <!-- .contacts -->
-            <ul class="contacts">
-            	<li><strong>País:</strong>Chile</li>
-              <li><strong>Ciudad:</strong>Castro, Isla Chiloé</li>
-              <li><strong>Teléfono:</strong>+56 9 65 534 048</li>
-              <li><strong>Celular:</strong>+56 9 96803602 </li>
-              <li><strong>Email:</strong><a href="#">arriendos@turismolachacra.cl</a></li>
-            </ul>
-            <!-- /.contacts -->
-            <!--<h3>Miscellaneous info:</h3>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
-          -->
-            </aside>
-          <!-- content -->
-          <section id="content">
-            <article>
-            	<h2>Formulario <span>Contáctenos</span></h2>
-              <form accept-charset="UTF-8" id="contacts-form" action="enviarMail.php" method="post">
-                <fieldset>
-                   <div class="field">
-                    <label >Tu nombre:</label>
-                    <input type="text" name="nombre"  required />
-                  </div>
-                  <div class="field">
-                    <label>Tu E-mail:</label>
-                    <input type="email" name="mail"  required/>
-                  </div>
-                  <div class="field">
-                    <label>Teléfono Contacto:</label>
-                    <input type="text" name="telefono" required/>
-                  </div>
-                  <div class="field">
-                    <label>Tu mensaje</label>
-                    <textarea  name="mensaje" required placeholder="Escribrenos para arrendar, consultar, agradecer o reclamar!"></textarea>
-                  </div>
-                  <div><input type="submit" id="lanzaVentana" value="Enviar"/></div>
-                </fieldset>
-              </form>
-            </article> 
-          </section>
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title> Turismo La Chacra - Quincho - Comidas Tipicas - Naturaleza</title>
+        <meta name="description" content="Turismo La Chacra - Local para Eventos al aire libre, 
+              preparación de comidas y entretenciones varias en contacto con la naturaleza.
+              Paseos por praderas y contacto con animales domésticos (Agro-Turismo).
+              Ubicado a 3 Km desde castro, en el Sector la Chacra">
+        <link rel="shortcut icon" href="favicon.ico" >
+        <link rel="icon" type="image/gif" href="animated_favicon1.gif" >
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+        <!-- Include the below script, Copyright 2010, Brandon Aaron (http://brandonaaron.net/) for scrollwheel support. -->
+        <script type="text/javascript" src="SlideDeck/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="SlideDeck/slidedeck.skin.css" media="screen" />
+        <!-- Include the SlideDeck jQuery script. -->
+        <script type="text/javascript" src="SlideDeck/slidedeck.jquery.lite.js"></script>
+
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/Humanst521_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/Humanst521_Lt_BT_400.font.js"></script>
+        <script type="text/javascript" src="js/roundabout.js"></script>
+        <script type="text/javascript" src="js/roundabout_shapes.js"></script>
+        <script type="text/javascript" src="js/gallery_init.js"></script>
+        <script type="text/javascript" src="js/cufon-replace.js"></script>
+        <script type="text/javascript" src="js/codigo.js"></script>
+        <!-- fancybox -->
+        <script src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js" type="text/javascript"> </script>
+        <link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css"/>
+        <!-- end fancybox -->
+        <!--[if lt IE 7]>
+              <link rel="stylesheet" href="css/ie/ie6.css" type="text/css" media="all">
+        <![endif]-->
+        <!--[if lt IE 9]>
+              <script type="text/javascript" src="js/html5.js"></script>
+          <script type="text/javascript" src="js/IE9.js"></script>
+        <![endif]-->
+        <script type='text/javascript' src="js/prefixfree.min.js"></script>
+        <script>
+            //Google Analytics
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-26216528-2']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.html">Turismo La Chacra</a></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="uno current">Inicio</a></li>
+                        <li><a href="arriendos_quincho.html" class="dos">Arriendos</a></li>
+                        <li><a href="galeria.html" class="tres">Galeria</a></li>
+                        <li><a href="contacto.html" class="cuatro">Contacto</a></li>
+                        <li><a href="ubicacion_quincho.html" class="cinco">Ubicación</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- #gallery -->
+        <section id="gallery">
+            <div class="container">
+                <ul id="myRoundabout">                    
+                    <li><img src="images/slide1.jpg" alt=""></li>
+                    <li><img src="images/slide2.jpg" alt=""></li>
+                    <li><img src="images/slide5.jpg" alt=""></li>
+                    <li><img src="images/slide4.JPG" alt=""></li>
+                    <li><img src="images/slide6.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        <!-- /#gallery -->
+        <!-- Inicio Container Dinamico-->
+        <div class="main-box">
+            <div class="container">
+                <div class="inside">
+                    <div class="wrapper">
+                        <!-- aside -->
+                        <aside>
+                            <h2>Nuestros <span>Datos</span></h2>
+                            <!-- .contacts -->
+                            <ul class="contacts">
+                                <li><strong>País:</strong>Chile</li>
+                                <li><strong>Ciudad:</strong>Castro, Isla Chiloé</li>
+                                <li><strong>Teléfono:</strong>+56 9 65 534 048</li>
+                                <li><strong>Celular:</strong>+56 9 96803602 </li>
+                                <li><strong>Email:</strong><a href="#">arriendos@turismolachacra.cl</a></li>
+                            </ul>
+                            <!-- /.contacts -->
+                            <!--<h3>Miscellaneous info:</h3>
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.
+                            -->
+                        </aside>
+                        <!-- content -->
+                        <section id="content">
+                            <article>
+                                <h2>Formulario <span>Contáctenos</span></h2>
+                                <form accept-charset="UTF-8" id="contacts-form" action="enviarMail.php" method="post">
+                                    <fieldset>
+                                        <div class="field">
+                                            <label >Tu nombre:</label>
+                                            <input type="text" name="nombre"  required />
+                                        </div>
+                                        <div class="field">
+                                            <label>Tu E-mail:</label>
+                                            <input type="email" name="mail"  required/>
+                                        </div>
+                                        <div class="field">
+                                            <label>Teléfono Contacto:</label>
+                                            <input type="text" name="telefono" required/>
+                                        </div>
+                                        <div class="field">
+                                            <label>Tu mensaje</label>
+                                            <textarea  name="mensaje" required placeholder="Escribrenos para arrendar, consultar, agradecer o reclamar!"></textarea>
+                                        </div>
+                                        <div><input type="submit" id="lanzaVentana" value="Enviar"/></div>
+                                    </fieldset>
+                                </form>
+                            </article> 
+                        </section>
+                    </div>
+                </div>
+            </div>
+
         </div>
-      </div>
-    </div>
- 
+        <!-- Fin Container Dinamico-->
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="fleft">Copyright - &COPY; turimoslachacra.cl 2012</div>
+                    <div class="fright"> &nbsp; &nbsp; |&nbsp; &nbsp; <a href="http://templates.com/product/3d-models/" target="_blank" rel="nofollow">designed by TemplateMonster.com</a> </div>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript"> Cufon.now(); </script>
+    </body>
+</html>
