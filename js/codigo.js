@@ -1,4 +1,4 @@
-//*/Funcionamiento menú*/
+
 $(document).ready(function() {
 						   
     var hash = window.location.hash.substr(1); //obtiene el hash ej !about
@@ -9,8 +9,9 @@ $(document).ready(function() {
         //                alert("hash "+hash);
         if(hash==href.substr(0,href.length-5)){
             var toLoad = hash.substr(1)+'.html .main-box'; //carga la pagina quitando al hash el !
-            //                        alert(toLoad);
+           // alert(toLoad);
             $('.main-box').load(toLoad)
+           
         }											
     });
 
@@ -38,10 +39,6 @@ $(document).ready(function() {
 		
     });
 
-
-    // Fin Funcionamiento Menu//
-            
-    //Scritp Menu galeria//
-           
+     
     
-});         //Fin Scritp Menu galeria//
+});  

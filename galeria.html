@@ -51,7 +51,9 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
+            
         </script>
+        
     </head>
 
     <body>
@@ -85,9 +87,31 @@
         <!-- /#gallery -->
         <!-- Inicio Container Dinamico-->
         <div class="main-box">
-           
+          
          <div id="galeria">
+              <script>
+                  $(document).ready(function(){
+                      
+                      alert("Doumento cargado");
+                  });
+            $('a[rel=galeria_1]').fancybox({
+                'transitionIn'		: 'elastic',
+                'transitionOut'		: 'elastic',
+                'titlePosition' 	: 'outside',
+                'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            });  
+            $('a[rel=galeria_2]').fancybox({
+                'transitionIn'		: 'elastic',
+                'transitionOut'		: 'elastic',
+                'titlePosition' 	: 'outside',
+                'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+                    return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+                }
+            }); 
              
+        </script>
             <h2>Galería <span>Fotográfica</span> </h2>
         <div id="thumbs">
             <div class="portafolio_galeria">
@@ -154,7 +178,7 @@
 
             </div>
         </div>
-
+           
         </div>
         
         <!-- Fin Container Dinamico-->
@@ -168,5 +192,6 @@
             </div>
         </footer>
         <script type="text/javascript"> Cufon.now(); </script>
+        
     </body>
 </html>
